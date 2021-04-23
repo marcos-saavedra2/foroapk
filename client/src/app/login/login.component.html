@@ -1,0 +1,18 @@
+<html>
+  <body background="../img/fondo2.jpg"></body>
+
+
+<form class="form-signin">
+     <h2 class="form-signin-heading">Ingresa tus datos</h2>
+     <label for="inputEmail" class="sr-only">Email address</label>
+        <input name="email" [(ngModel)] = "user.username" type="email" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input name="password" [(ngModel)] = "user.password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Recordar
+          </label>
+        </div>
+	<button class="btn btn-lg btn-primary btn-block" (click)="validateLogin();" type="button">ENTRAR</button>
+</form>
+</html>

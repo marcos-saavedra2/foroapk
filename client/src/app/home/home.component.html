@@ -1,0 +1,39 @@
+<html>
+    
+<header class="header clearfix">
+
+    
+    <nav>
+        <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary">
+                  Inicio
+                </button>
+            </li>
+            <li class="nav-item">
+                <button #addPost type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
+                  Insertar
+                </button>
+            </li>
+            <li class="nav-item">
+                 <button (click)="logout()" type="button" class="btn btn-link">
+                  Salir
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <h3 class="text-muted">FORO PARA DENUNCIAR ABUSOS CONTRA LA MUJER</h3>
+</header>
+
+
+<main role="main">
+   
+    <app-show-post></app-show-post>
+    <app-add-post></app-add-post>
+    
+</main>
+
+<footer class="footer">
+    <p>&copy; UTXJ 2021</p>
+</footer>
+</html>
